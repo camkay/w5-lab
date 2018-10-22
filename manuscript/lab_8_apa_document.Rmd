@@ -56,12 +56,20 @@ library(janitor)
 
 ```
 
+```{r load data}
+
+star_data <- import(here("data", "star.csv"), 
+                    setclass = "tbl_df")
+
+star_data <- janitor::clean_names(star_data)
+
+```
+
 ```{r analysis-preferences}
 # Seed for random number generation
 set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
-
 
 
 # Methods
