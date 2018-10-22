@@ -59,9 +59,8 @@ library(janitor)
 ```{r load_data}
 
 star_data <- import(here("data", "star.csv"), 
-                    setclass = "tbl_df")
-
-star_data <- janitor::clean_names(star_data)
+                    setclass = "tbl_df") %>%
+              janitor::clean_names(star_data)
 
 ```
 
