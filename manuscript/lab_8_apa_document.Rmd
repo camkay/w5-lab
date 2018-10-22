@@ -18,7 +18,7 @@ affiliation:
     institution   : "University of Oregon"
 
 abstract: |
-  Here is an abstract. It is abstract, but also specific. 
+  Here is an abstract. It is abstract but also specific. 
   
   <!-- https://tinyurl.com/ybremelq -->
   
