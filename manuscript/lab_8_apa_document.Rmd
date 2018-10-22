@@ -60,7 +60,7 @@ library(janitor)
 
 star_data <- import(here("data", "star.csv"), 
                     setclass = "tbl_df") %>%
-              janitor::clean_names(star_data)
+              janitor::clean_names()
 
 ```
 
