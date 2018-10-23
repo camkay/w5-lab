@@ -53,6 +53,7 @@ library(ggplot2)
 library(here)
 library(rio)
 library(janitor)
+library(knitr)
 
 ```
 
@@ -86,8 +87,27 @@ We used `r cite_r("r-references.bib")` for all our analyses.
 
 # Results
 
-# Discussion
+Table 1. 
 
+*Descriptive statistics for math and reading, grouped by sex and frl.* 
+```{r create_table}
+star_data %>%
+  group_by(sex, frl) %>%
+  summarize(math_mean = round(mean(tmathss), 2),
+            math_sd = round(sd(tmathss), 2),
+            rdg_mean = round(mean(treadss), 2),
+            rdg_sd = round(sd(treadss),2)) %>%
+  kable()
+```
+
+As shown in Table 1, the mean math and reading scores for boys with "yes" for
+frl was lower than the mean math and reading scores for boys with "no" for frl.
+In contrast, the mean math and reading scores for girls with "yes" for frl was
+higher than the mean math and reading scores for girls with "no" for frl. For
+both levels of frl, the mean math and reading scores were higher for girls than
+boys. 
+
+# Discussion
 
 \newpage
 
