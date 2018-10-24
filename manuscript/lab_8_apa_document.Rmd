@@ -24,7 +24,7 @@ abstract: |
   
 keywords          : "apa, papaja, science"
 
-bibliography      : ["r-references.bib"]
+bibliography      : ["references.bib"]
 
 floatsintext      : no
 figurelist        : no
