@@ -153,22 +153,31 @@ Table 1.
 \emph{Descriptive statistics for math and reading, grouped by sex and
 frl.}
 
-\begin{tabular}{l|l|r|r|r|r}
-\hline
-sex & frl & math\_mean & math\_sd & rdg\_mean & rdg\_sd\\
-\hline
+\begin{table}[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:create_table}}
+\begin{tabular}{llllll}
+\toprule
+sex & \multicolumn{1}{c}{frl} & \multicolumn{1}{c}{math\_mean} & \multicolumn{1}{c}{math\_sd} & \multicolumn{1}{c}{rdg\_mean} & \multicolumn{1}{c}{rdg\_sd}\\
+\midrule
 boy & no & 492.85 & 46.34 & 441.46 & 32.32\\
-\hline
 boy & yes & 469.87 & 46.09 & 425.38 & 26.63\\
-\hline
 girl & no & 501.21 & 45.96 & 448.54 & 34.52\\
-\hline
 girl & yes & 477.51 & 46.30 & 430.80 & 27.42\\
-\hline
+\bottomrule
 \end{tabular}
+\end{threeparttable}
+\end{center}
+\end{table}
 
-A shown in Table 1, boys with \enquote{yes} for \texttt{frl} showed a
-higher mean me
+As shown in Table 1, the mean math and reading scores for boys with
+\enquote{yes} for frl was lower than the mean math and reading scores
+for boys with \enquote{no} for frl. In contrast, the mean math and
+reading scores for girls with \enquote{yes} for frl was higher than the
+mean math and reading scores for girls with \enquote{no} for frl. For
+both levels of frl, the mean math and reading scores were higher for
+girls than boys.
 
 \section{Discussion}\label{discussion}
 

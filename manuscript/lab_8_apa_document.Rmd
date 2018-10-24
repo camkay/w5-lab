@@ -90,14 +90,14 @@ We used `r cite_r("r-references.bib")` for all our analyses.
 Table 1. 
 
 *Descriptive statistics for math and reading, grouped by sex and frl.* 
-```{r create_table}
+```{r create_table, results='asis'}
 star_data %>%
   group_by(sex, frl) %>%
   summarize(math_mean = round(mean(tmathss), 2),
             math_sd = round(sd(tmathss), 2),
             rdg_mean = round(mean(treadss), 2),
             rdg_sd = round(sd(treadss),2)) %>%
-  kable()
+  apa_table()
 ```
 
 As shown in Table 1, the mean math and reading scores for boys with "yes" for

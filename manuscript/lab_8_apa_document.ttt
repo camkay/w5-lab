@@ -1,0 +1,19 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:create_table}}
+\begin{tabular}{llllll}
+\toprule
+sex & \multicolumn{1}{c}{frl} & \multicolumn{1}{c}{math\_mean} & \multicolumn{1}{c}{math\_sd} & \multicolumn{1}{c}{rdg\_mean} & \multicolumn{1}{c}{rdg\_sd}\\
+\midrule
+boy & no & 492.85 & 46.34 & 441.46 & 32.32\\
+boy & yes & 469.87 & 46.09 & 425.38 & 26.63\\
+girl & no & 501.21 & 45.96 & 448.54 & 34.52\\
+girl & yes & 477.51 & 46.30 & 430.80 & 27.42\\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{center}
+\end{table*}
