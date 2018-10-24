@@ -1,4 +1,4 @@
-\documentclass[man]{apa6}
+\documentclass[man,floatsintext]{apa6}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -24,7 +24,7 @@
 \usepackage{hyperref}
 \hypersetup{unicode=true,
             pdftitle={Our APA document for Lab 8},
-            pdfauthor={Cameron S. Kay, Stefania Ashby, \& Ashley L. Miller},
+            pdfauthor={Cameron S. Kay, Stefania R. Ashby, \& Ashley L. Miller},
             pdfkeywords={apa, papaja, science},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -64,8 +64,8 @@
 
 
   \title{Our APA document for Lab 8}
-    \author{Cameron S. Kay\textsuperscript{1}, Stefania Ashby\textsuperscript{1}, \&
-Ashley L. Miller\textsuperscript{1}}
+    \author{Cameron S. Kay\textsuperscript{1}, Stefania R. Ashby\textsuperscript{1},
+\& Ashley L. Miller\textsuperscript{1}}
     \date{}
   
 \shorttitle{Lab 8 APA document}
@@ -119,6 +119,8 @@ I am writing an introduction. Caprara, Barbaranelli, Steca, and Malone
 (2006) found some stuff. But other people have found other stuff
 (Zimmerman, 1990).
 
+\newpage
+
 \section{Methods}\label{methods}
 
 We report how we determined our sample size, all data exclusions (if
@@ -132,17 +134,22 @@ any), all manipulations, and all measures in the study.
 
 \subsection{Data analysis}\label{data-analysis}
 
+\newpage
+
 \section{Results}\label{results}
 
-Table 1.
+As shown in Table 1, the mean math and reading scores for boys with
+\enquote{yes} for frl was lower than the mean math and reading scores
+for boys with \enquote{no} for frl. In contrast, the mean math and
+reading scores for girls with \enquote{yes} for frl was higher than the
+mean math and reading scores for girls with \enquote{no} for frl. For
+both levels of frl, the mean math and reading scores were higher for
+girls than boys.
 
-\emph{Descriptive statistics for math and reading, grouped by sex and
-frl.}
-
-\begin{table}[tbp]
+\begin{table}[h]
 \begin{center}
 \begin{threeparttable}
-\caption{\label{tab:create_table}}
+\caption{\label{tab:create_table}Descriptive statistics for math and reading, grouped by sex and frl.}
 \begin{tabular}{llllll}
 \toprule
 sex & \multicolumn{1}{c}{frl} & \multicolumn{1}{c}{math\_mean} & \multicolumn{1}{c}{math\_sd} & \multicolumn{1}{c}{rdg\_mean} & \multicolumn{1}{c}{rdg\_sd}\\
@@ -157,13 +164,7 @@ girl & yes & 477.51 & 46.30 & 430.80 & 27.42\\
 \end{center}
 \end{table}
 
-As shown in Table 1, the mean math and reading scores for boys with
-\enquote{yes} for frl was lower than the mean math and reading scores
-for boys with \enquote{no} for frl. In contrast, the mean math and
-reading scores for girls with \enquote{yes} for frl was higher than the
-mean math and reading scores for girls with \enquote{no} for frl. For
-both levels of frl, the mean math and reading scores were higher for
-girls than boys.
+\newpage
 
 \section{Discussion}\label{discussion}
 

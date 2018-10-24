@@ -8,7 +8,7 @@ author:
     corresponding : yes    # Define only one corresponding author
     address       : "1451 Onyx Street, Eugene, OR 97403"
     email         : "ckay@uoregon.edu"
-  - name          : "Stefania Ashby"
+  - name          : "Stefania R. Ashby"
     affiliation   : "1"
   - name          : "Ashley L. Miller"
     affiliation   : "1"
@@ -33,6 +33,7 @@ footnotelist      : no
 linenumbers       : no
 mask              : no
 draft             : no
+figsintext        : yes
 
 documentclass     : "apa6"
 classoption       : "man"
@@ -73,6 +74,8 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 I am writing an introduction. @caprara2006teachers found some stuff. But other people have found other stuff [@zimmerman1990self].
 
+\newpage
+
 # Methods
 We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
 
@@ -84,20 +87,9 @@ We report how we determined our sample size, all data exclusions (if any), all m
 
 ## Data analysis
 
+\newpage
+
 # Results
-
-Table 1. 
-
-*Descriptive statistics for math and reading, grouped by sex and frl.* 
-```{r create_table, results='asis'}
-star_data %>%
-  group_by(sex, frl) %>%
-  summarize(math_mean = round(mean(tmathss), 2),
-            math_sd = round(sd(tmathss), 2),
-            rdg_mean = round(mean(treadss), 2),
-            rdg_sd = round(sd(treadss),2)) %>%
-  apa_table()
-```
 
 As shown in Table 1, the mean math and reading scores for boys with "yes" for
 frl was lower than the mean math and reading scores for boys with "no" for frl.
@@ -105,6 +97,22 @@ In contrast, the mean math and reading scores for girls with "yes" for frl was
 higher than the mean math and reading scores for girls with "no" for frl. For
 both levels of frl, the mean math and reading scores were higher for girls than
 boys. 
+
+
+```{r create_table, results='asis'}
+star_data %>%
+  group_by(sex, frl) %>%
+  summarize(math_mean = round(mean(tmathss), 2),
+            math_sd = round(sd(tmathss), 2),
+            rdg_mean = round(mean(treadss), 2),
+            rdg_sd = round(sd(treadss),2)) %>%
+  apa_table(caption = "Descriptive statistics for math and reading, grouped by sex and frl.",
+            placement = 'h')
+
+```
+
+
+\newpage
 
 # Discussion
 
