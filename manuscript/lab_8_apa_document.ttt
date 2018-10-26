@@ -1,9 +1,9 @@
 \begin{table*}[hbt]
 \ifnextchar[{\eatarg}{}
-[tbp]
+[h]
 \begin{center}
 \begin{threeparttable}
-\caption{\label{tab:create_table}}
+\caption{\label{tab:create_table}Descriptive statistics for math and reading, grouped by sex and frl.}
 \begin{tabular}{llllll}
 \toprule
 sex & \multicolumn{1}{c}{frl} & \multicolumn{1}{c}{math\_mean} & \multicolumn{1}{c}{math\_sd} & \multicolumn{1}{c}{rdg\_mean} & \multicolumn{1}{c}{rdg\_sd}\\

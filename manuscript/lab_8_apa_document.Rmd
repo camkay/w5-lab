@@ -33,7 +33,7 @@ footnotelist      : no
 linenumbers       : no
 mask              : no
 draft             : no
-figsintext        : yes
+figsintext        : no
 
 documentclass     : "apa6"
 classoption       : "man"
@@ -113,7 +113,7 @@ star_data %>%
 
 As shown in Figure 1, there is a similar relationship between teacher experience and student performance on math for both groups of students. With more years of teaching experience, students do better on their math scores. However students who receive free/reduced priced meals (implying lower socioeconomic status) have an overall deficit compared to students with higher socioeconomic status, demonstrating that they are at a disadvantage from the beginning. 
 
-```{r create plot, }
+```{r fig.cap = "An amazing figure"}
 library(cowplot)
 library(wesanderson)
 pal <- wes_palette("Darjeeling1")
